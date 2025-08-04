@@ -1,0 +1,32 @@
+<div class="foot">
+            <hr style="color: rgb(2, 0, 0); margin-bottom: 0px;">
+            <p class>2025-All Reserved</p>
+            <div class="sm">
+                <p><a href="#" class="fa fa-facebook"></a></p>
+                <p><a href="#" class="fa fa-instagram"></a></p>
+                <p><a href="#" class="fa fa-linkedin"></a></p>
+            </div>
+
+        </div>
+
+
+
+
+        <div id="contact1" class="contact">
+        <center><h2 class="con">Contact</h2></center>
+        <h3 class="con">Drop Me a Message</h3>
+        <p class="con">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, reiciendis.</p>
+        <p class="con">&#128222 +91 9876543210</p>
+        <p class="con">&#128386 basha0987@gmail.com</p>
+        <p class="con">🏠xyz,kangeyam,tamilnadu</p>
+        <div class="footer">
+            <center>
+            <hr size="2" style=" background-color: black;">
+            <p class="con1">&copy: 2025 Ibrahim Basha. All rights reserved.</p>
+            <a href="mailto:ibrahimbasha0927@gmail.com" class="con1">Email</a>
+            <a href="https://www.linkedin.com/in/ibrahim-basha-s-67055a277/" class="con1">LinkedIn</a>
+            <a href="https://github.com/Ibrahimsadiqbasha?tab=repositories" class="con1">Github</a><br>
+            <a href="#top" class="con1">Back to Top</a>
+            </center>
+        </div>
+    </div>
