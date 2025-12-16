@@ -6,6 +6,7 @@ html{
     scroll-behavior: smooth;
 }
 body{
+    font-family: 'Open Sans',Arial, sans-serif;
     background-image: url(img/Photo.jpg);
     background-attachment: fixed;
     background-size: 100% 100%;
@@ -41,51 +42,62 @@ body{
 
 .bli:hover{
     cursor: pointer;
-    text-shadow: 0 0 20px #00fffb , 0 0 40px #0081bc;
-    color: aqua;
+    text-shadow: 0 0 20px #058d8b , 0 0 40px #0081bc;
+    color: rgb(3, 136, 136);
     transform: scale(1.1);
 }
 .homecon{
     display: flex;
 }
 .home{
-    padding: 180px 0 50px 150px;
+    padding: 180px 0 50px 120px;
     font-size: 35px;
 }
 
 .homebtn{
     background-color: darkcyan;
-    margin: 30px 0 0 0;
     width: 200px;
     height: 50px;
     font-size: 20px;
     border-radius: 20px;
+    margin: 10px 0;
+}
+
+.social-links a {
+  font-size: 30px;
+  color: #333;
+  margin: 0 12px;
+  transition: 0.3s;
+}
+
+.social-links a:hover {
+  color: #0077b5; /* LinkedIn blue */
 }
 
 .photo{
-
     width: 400px;
     height:400px;
-    margin: 150px 20px 0 80px;
+    margin: 150px 20px 50px 80px;
     border-radius: 50%;
     border: 5px solid black;
 }
 .photo:hover,.aboutimg:hover{
-    box-shadow: 0 0 20px #00fffb,0 0 40px #0081bc;
+    box-shadow: 0 0 20px #03817f,0 0 40px #0081bc;
     transform: scale(1.05);
 }
 .about{
     display: flex;
+    margin: 50px 0;
 }
 .aboutimg{
     width: 350px;
     height:350px;
     border: 5px solid black;
-    margin: 170px 0 0 200px;
+    margin: 150px 0 0 100px;
 
 }
 .aboutcont{
-    width: 500px;
+    width: 700px;
     padding: 100px 0 0 150px;
     font-size:20px ;
 }
@@ -98,44 +110,77 @@ body{
     background-color:darkcyan;
     text-decoration: none;
 }
-.btn:hover,.homebtn:hover{
+.btn:hover,.homebtn1:hover{
     cursor: pointer;
     color: black;
-    box-shadow: 0 0 20px #00fffb,0 0 40px #0081bc;
+    box-shadow: 0 0 20px #017977,0 0 40px #0081bc;
     transform: scale(1.02);
 }
-.project{
-    padding: 80px 0 80px 0;
-    justify-content: center;
+.project {
+  padding: 100px 0;
 }
+
+.section-title {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 30px;
+  color: white;
+}
+
 .project-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-    padding: 40px 100px;
-    text-align: left;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 0 80px;
 }
 
 .project-card {
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 20px;
-    border-radius: 20px;
-    box-shadow: 0 0 10px #00fffb, 0 0 20px #0081bc;
-    transition: transform 0.3s;
+  position: relative;
+  height: 200px;
+  background: rgba(255,255,255,0.08);
+  border-radius: 20px;
+  box-shadow: 0 0 15px darkcyan;
+  overflow: hidden;
 }
 
-.project-card:hover {
-    transform: scale(1.05);
-    background-color: rgba(0, 255, 255, 0.2);
-}
-.project-card h3 {
-    margin-bottom: 10px;
-    color: aqua;
+.card-content {
+  padding: 25px;
 }
 
-.project-card p {
-    color: white;
-    font-size: 16px;
+
+.card-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  justify-content: center;   /* horizontal center */
+  align-items: center;       /* vertical center */
+  gap: 16px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Stack buttons vertically */
+.card-overlay {
+  flex-direction: column;
+}
+
+/* Buttons alignment fix */
+.card-overlay .btn {
+  min-width: 160px;          /* 👈 makes both buttons same width */
+  text-align: center;        /* centers text inside button */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-card:hover .card-overlay {
+  opacity: 1;
+}
+
+.btn1.outline {
+  background: transparent;
+  border: 2px solid darkcyan;
 }
 
 .skill{
@@ -158,7 +203,7 @@ body{
     box-shadow: 0 0 50px black;
 }
 .ski:hover{
-    box-shadow: 0 0 20px #00fffb,0 0 40px #0081bc
+    box-shadow: 0 0 20px #048381,0 0 40px #0081bc
 }
 .con2,.con{
     margin: 30px 30px;
@@ -171,7 +216,7 @@ body{
     display: flex;
     padding: 0 50px 30px 50px;
     border-radius: 70px 70px 0 0;
-    background: linear-gradient(135deg,rgb(0, 119, 255),blue);
+    background: linear-gradient(135deg,rgb(1, 40, 85),rgb(1, 1, 100));
 }
 .contact{
     width: 60%;
@@ -179,7 +224,7 @@ body{
 }
 .box{
     width: 30%;
-    box-shadow: 0 0 20px #00fffb,0 0 40px #0081bc;
+    box-shadow: 0 0 20px #03807d,0 0 40px #0081bc;
     text-align: center;
     padding-top: 20px;
     margin: 120px 100px 0 100px ;
@@ -219,129 +264,32 @@ body{
     align-items: center;
 }
 .logo2{
-    width: 30%;
+    width: 20%;
     padding: 0 0 0 20px;
 }
 .footer{
     display: flex;
-    background: linear-gradient(135deg,rgb(0, 119, 255),blue);
+    background: linear-gradient(135deg,rgb(1, 40, 85),rgb(1, 1, 100));
     justify-content: center;
 }
 .cencon{
-    width: 40%;
+    width: 60%;
 }
 .con1{
     color: white;
-    padding:10px 100px;
+    padding:15px 0 0 220px;
+}
+.social a{
+    font-size: 30px;
+    color: #333;
+    margin: 50px 30px 0 0;
+    transition: 0.3s;
 }
 .social{
-    width: 30%;
-    font-size: 30px;
-}
-.social1{
-    padding: 30px 30px 10px 30px;
-}
-/* --- EXISTING STYLES REMAIN --- */
-
-/* Add this to the bottom of styles.css */
-
-@media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-    align-items: center;
-    position: static;
-  }
-
-  .navbar {
-    flex-direction: column;
-    gap: 10px;
-    padding: 10px;
-  }
-
-  .homecon {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding-top: 120px;
-  }
-
-  .photo {
-    width: 250px;
-    height: 250px;
-    margin: 30px 0;
-  }
-
-  .home {
-    padding: 40px 20px;
-    font-size: 24px;
-  }
-
-  .about {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .aboutimg {
-    width: 250px;
-    height: 250px;
-    margin: 20px 0;
-  }
-
-  .aboutcont {
-    padding: 20px;
-    width: 90%;
-  }
-
-  .project-grid {
-    padding: 20px;
-    grid-template-columns: 1fr;
-  }
-
-  .skillcon {
-    margin: 30px 10px;
-    padding: 10px;
-  }
-
-  .wholecontact {
-    flex-direction: column;
-    padding: 20px;
-    align-items: center;
-  }
-
-  .contact {
-    width: 100%;
-    margin: 0 auto;
-    text-align: center;
-  }
-
-  .box {
-    width: 90%;
-    margin: 20px 0;
-  }
-
-  .footer {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .cencon, .logo2, .social {
-    width: 100%;
-    padding: 10px;
-  }
-
-  .social1 {
-    padding: 10px;
-  }
-}
-
-/* Optional: improve button sizing on mobile */
-.btn, .homebtn, .box3 {
-  width: 80%;
-  max-width: 300px;
-  margin: 10px auto;
-  display: block;
+    padding: 10px 50px 10px 0;
 }
 
 
+.social-links a:hover {
+  color: #0077b5; /* LinkedIn blue */
+}

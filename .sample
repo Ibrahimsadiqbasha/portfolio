@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ibrahim Basha | Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="container">
+  <div class="logo">
+    <img src="img/download.png" class="logo1">
+  </div>
+  <div class="navbar">
+    <a href="#home1" class="bli">Home</a>
+    <a href="#about1" class="bli">About</a>
+    <a href="#project1" class="bli">Projects</a>
+    <a href="#skill1" class="bli">Skills</a>
+    <a href="#contact1" class="bli">Contact</a>
+  </div>
+</div>
+
+<!-- HOME -->
+<div id="home1" class="homecon">
+  <div class="home">
+    <h1>Hi,<br>I'm Ibrahim Basha,<br>Full Stack Developer</h1>
+
+    <div class="social-links">
+      <a href="mailto:ibrahimbasha0927@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+      <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="#"><i class="fa-brands fa-github"></i></a>
+    </div>
+
+    <a href="#contact1" class="homebtn1">Contact Me</a>
+  </div>
+
+  <img src="img/profile.jpg" class="photo">
+</div>
+
+<!-- ABOUT -->
+<div id="about1" class="about">
+  <img src="img/profile2.jpg" class="aboutimg">
+
+  <div class="aboutcont">
+    <h2>About Me</h2>
+    <p>
+      I’m Ibrahim Basha, a passionate Full Stack Developer skilled in the MERN stack.
+      I love building responsive, user-friendly web applications and learning new technologies.
+    </p>
+    <a href="IBRAHIM BASHA RESUME.pdf" target="_blank" class="btn">Resume</a>
+  </div>
+</div>
+
+<!-- PROJECTS -->
+<div id="project1" class="project">
+  <h2 class="section-title">Projects</h2>
+
+  <div class="project-grid">
+
+    <div class="project-card">
+      <div class="card-content">
+        <h3>Cloud Gaming Platform</h3>
+        <p>Multiplayer browser-based gaming platform.</p>
+        <p><strong>Tech:</strong> HTML, JS, Firebase</p>
+      </div>
+      <div class="card-overlay">
+        <a href="#" class="btn">Live Demo</a>
+        <a href="#" class="btn outline">GitHub</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="card-content">
+        <h3>Birthday Reminder</h3>
+        <p>Stores birthdays and sends reminders.</p>
+        <p><strong>Tech:</strong> React, Node, MongoDB</p>
+      </div>
+      <div class="card-overlay">
+        <a href="#" class="btn">Live Demo</a>
+        <a href="#" class="btn outline">GitHub</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="card-content">
+        <h3>Expense Calculator</h3>
+        <p>Track income and expenses.</p>
+        <p><strong>Tech:</strong> MERN</p>
+      </div>
+      <div class="card-overlay">
+        <a href="#" class="btn">Live Demo</a>
+        <a href="#" class="btn outline">GitHub</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="card-content">
+        <h3>Portfolio Website</h3>
+        <p>Personal responsive portfolio.</p>
+        <p><strong>Tech:</strong> HTML, CSS, JS</p>
+      </div>
+      <div class="card-overlay">
+        <a href="#" class="btn">Live Demo</a>
+        <a href="#" class="btn outline">GitHub</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="card-content">
+        <h3>Rock Paper Scissors</h3>
+        <p>Interactive browser game.</p>
+        <p><strong>Tech:</strong> HTML, CSS, JS</p>
+      </div>
+      <div class="card-overlay">
+        <a href="#" class="btn">Live Demo</a>
+        <a href="#" class="btn outline">GitHub</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- SKILLS -->
+<div id="skill1" class="skill">
+  <h2 class="section-title">Skills</h2>
+  <div class="skillcon">
+    <img src="img/html.jpg" class="ski">
+    <img src="img/css.png" class="ski">
+    <img src="img/js.webp" class="ski">
+    <img src="img/react.png" class="ski">
+    <img src="img/nodejs.jpg" class="ski">
+    <img src="img/mongodb.png" class="ski">
+  </div>
+</div>
+
+<!-- CONTACT -->
+<div id="contact1" class="wholecontact">
+  <div class="contact">
+    <h2>Contact</h2>
+    <p>📞 +91 9659455786</p>
+    <p>📧 ibrahimbasha0927@gmail.com</p>
+  </div>
+
+  <div class="box">
+    <input type="text" placeholder="Name" class="box1">
+    <input type="email" placeholder="Email" class="box1">
+    <textarea placeholder="Message" class="box2"></textarea>
+    <button class="box3">Send</button>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+  <p>© 2025 Ibrahim Basha. All rights reserved.</p>
+</div>
+
+</body>
+</html>
+<style>* {
+  margin: 0;
+  box-sizing: border-box;
+  color: white;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: url(img/Photo.jpg) no-repeat fixed;
+  background-size: cover;
+}
+
+/* NAVBAR */
+.container {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: rgba(0,0,0,0.6);
+  z-index: 10;
+}
+
+.logo { width: 40%; padding: 10px; }
+.logo1 { width: 50px; border-radius: 50%; }
+
+.navbar {
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.bli {
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.bli:hover {
+  color: darkcyan;
+}
+
+/* HOME */
+.homecon {
+  display: flex;
+  padding-top: 120px;
+}
+
+.home {
+  padding: 120px;
+}
+
+.photo {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  margin-top: 120px;
+}
+
+/* BUTTONS */
+.btn, .homebtn1 {
+  display: inline-block;
+  padding: 12px 30px;
+  background: darkcyan;
+  border-radius: 25px;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+/* PROJECTS */
+.project {
+  padding: 100px 0;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 50px;
+  color: darkcyan;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 300px); /* 👈 card width */
+  gap: 30px;
+  padding: 0 80px;
+  justify-content: center;
+}
+
+.project-card {
+  width: 250px;   /* same as column width */
+  height: 200px;  /* 👈 change height here */
+}
+
+.card-content {
+  padding: 25px;
+}
+
+.card-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.85);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.project-card:hover .card-overlay {
+  opacity: 1;
+}
+
+.btn.outline {
+  background: transparent;
+  border: 2px solid darkcyan;
+}
+
+/* SKILLS */
+.skillcon {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.ski {
+  width: 120px;
+  margin: 20px;
+  border-radius: 50%;
+}
+
+/* CONTACT */
+.wholecontact {
+  display: flex;
+  padding: 60px;
+  background: linear-gradient(135deg, #012855, #010164);
+}
+
+.box {
+  margin-left: 50px;
+}
+
+.box1, .box2 {
+  width: 250px;
+  margin-bottom: 15px;
+  color: black;
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: #010164;
+}
+</style>
+
+
+
+
+
+
+
+
+
+
+ <!-- <div id="project1" class="project">
+        <center><h2>Project</h2></center>
+        <div class="project-grid">
+        <a href="https://github.com/Ibrahimbashasadiq/Gaming-Platform/tree/main/new" target="_blank" style="text-decoration: none;">
+        <div class="project-card">
+            <h3>Cloud-Based Gaming Platform</h3>
+            <p>Multiplayer browser gaming platform with real-time interaction and score tracking.</p>
+            <p><strong>Tech:</strong> HTML, JavaScript, Firebase Auth</p>
+        </div></a>
+        <a href="https://github.com/Ibrahimsadiqbasha/Birthday-Reminder" target="_blank" style="text-decoration: none;">
+        <div class="project-card">
+            <h3>Birthday Reminder</h3>
+            <p>A lightweight app that stores birthdays and reminds you with alerts on the special day. You can add, edit, or delete entries easily.</p>
+            <p><strong>Tech:</strong> React.js, Node.js, MongoDB</p>
+        </div></a>
+        <a href="https://github.com/Ibrahimsadiqbasha/Expense-Tracker" target="_blank" style="text-decoration: none;">
+        <div class="project-card">
+            <h3>Expense Calculator</h3>
+            <p>Track your income and expenses with a user-friendly UI and edit/delete history.</p>
+            <p><strong>Tech:</strong> React.js, Node.js, MongoDB</p>
+        </div></a>
+        <a href="https://github.com/Ibrahimsadiqbasha/portfolio" target="_blank" style="text-decoration: none;">
+        <div class="project-card">
+            <h3>Portfolio Website</h3>
+            <p>This responsive website (you’re viewing it!) showcasing all my projects and skills.</p>
+            <p><strong>Tech:</strong> HTML, CSS, JavaScript</p>
+        </div></a>
+        <a href="https://github.com/Ibrahimsadiqbasha/Rock-paper-scissor" target="_blank" style="text-decoration: none;">
+        <div class="project-card">
+            <h3>Rock, Paper, Scissors Game</h3>
+            <p>A simple but interactive browser game with score and animations.</p>
+            <p><strong>Tech:</strong> HTML, CSS, JavaScript</p>
+        </div></a>
+</div> -->
+
+<!-- /* .project{
+    padding: 80px 0 80px 0;
+    justify-content: center;
+}
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 40px 100px;
+    text-align: left;
+}
+
+.project-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #027e7c, 0 0 20px #0081bc;
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    background-color: rgba(0, 255, 255, 0.2);
+}
+.project-card h3 {
+    margin-bottom: 10px;
+    color: rgb(3, 136, 136);
+}
+
+.project-card p {
+    color: white;
+    font-size: 16px;
+} */ -->

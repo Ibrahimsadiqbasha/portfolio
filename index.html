@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <body>
     <div class="container">
         <div class="logo">
@@ -23,10 +22,21 @@
     <div id="home1" class="homecon">
         <div class="home">
         <h1>Hi,<br>I'm Ibrahim Basha,<br>Full Stack Developer</h1><br>
-        <span><a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=DmwnWsmFRhcckrQRbgPxGjbfkswfVBTMBNgkFZvMVmhfkVfqkghgHVszwbBNKktPGHWttlTMVJcb" class="fa fa-envelope" title="Email Me"></a>&nbsp</span>
-        <span><a href="https://www.linkedin.com/in/ibrahim-basha-s-67055a277/" class="fa fa-linkedin"></a>&nbsp</span>
-        <span><a href="https://github.com/Ibrahimsadiqbasha" class="fa fa-github"></a></span><br>
-        <button class="homebtn"> <a class="homebtn1" href="#contact1">Contact me</a></button>
+        <div class="social-links">
+            <a href="mailto:ibrahimbasha0927@gmail.com" target="_blank">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/ibrahim-basha-s-67055a277/" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+
+            <a href="https://github.com/Ibrahimsadiqbasha" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            </div>
+            <button class="homebtn"> <a class="homebtn1" href="#contact1">Contact me</a></button>
+
         </div>
         <div >
             <img src="img/profile.jpg" class="photo">
@@ -36,50 +46,83 @@
         <div ><img src="img/profile2.jpg" class="aboutimg"></div>
         <div class="aboutcont">
             <h2>About Me</h2><br>
-            <p>Hi! I’m Ibrahim Basha, a passionate Full Stack Developer who enjoys building websites and web apps that are both useful and user-friendly.<br>
-I love working with both frontend and backend technologies creating sleek interfaces with React and CSS, and building powerful backends with Node.js, Express, and MongoDB.<br> I also enjoy learning new tools and keeping up with the latest in web development.<br>
-Whether it's designing a clean UI, writing neat code, or solving real-world problems through tech, I’m always up for a challenge. <br>I believe in continuous learning and growing with every project I work on.<br>
-When I’m not coding, I enjoy exploring new ideas, helping others, and working on fun side projects.<br>
-Let’s build something amazing together!</p>
+            <p>Hi, I’m Ibrahim Basha, a passionate Full Stack Web Developer with a strong interest in building modern, user-friendly, and scalable web applications. I enjoy turning ideas into real-world digital solutions using clean code and intuitive design. <br><br>
+
+I have hands-on experience with the MERN stack (MongoDB, Express.js, React.js, Node.js) and a solid foundation in HTML, CSS, JavaScript, and RESTful APIs. I focus on writing efficient, maintainable code and continuously improving my skills by working on real projects. <br><br>
+
+I’m a quick learner, self-motivated, and always eager to explore new technologies. My goal is to grow as a developer, contribute to meaningful projects, and build applications that create real impact. </p>
             
-            <a href="Ibrahim resume.pdf" target="_blank"><button class="btn">RESUME</button></a>  
+            <a href="IBRAHIM BASHA RESUME (4).pdf" target="_blank"><button class="btn">RESUME</button></a>  
         </div>
     </div>
-    <div id="project1" class="project">
-        <center><h2>Project</h2></center>
-        <div class="project-grid">
-        <a href="https://github.com/Ibrahimbashasadiq/Gaming-Platform/tree/main/new" target="_blank" style="text-decoration: none;">
-        <div class="project-card">
-            <h3>Cloud-Based Gaming Platform</h3>
-            <p>Multiplayer browser gaming platform with real-time interaction and score tracking.</p>
-            <p><strong>Tech:</strong> HTML, JavaScript, Firebase Auth</p>
-        </div></a>
-        <a href="https://github.com/Ibrahimsadiqbasha/Birthday-Reminder" target="_blank" style="text-decoration: none;">
-        <div class="project-card">
-            <h3>Birthday Reminder</h3>
+
+<div id="project1" class="project">
+  <h2 class="section-title">Projects</h2>
+
+  <div class="project-grid">
+
+    <div class="project-card">
+      <div class="card-content">
+        <h3>Birthday Reminder</h3><br>
             <p>A lightweight app that stores birthdays and reminds you with alerts on the special day. You can add, edit, or delete entries easily.</p>
-            <p><strong>Tech:</strong> React.js, Node.js, MongoDB</p>
-        </div></a>
-        <a href="https://github.com/Ibrahimsadiqbasha/Expense-Tracker" target="_blank" style="text-decoration: none;">
-        <div class="project-card">
-            <h3>Expense Calculator</h3>
+            <p><strong>Tech:</strong> HTML, CSS, React.js, Node.js, Express.js, MongoDB</p>
+      </div>
+      <div class="card-overlay">
+        <a href="https://birthday-reminder-n848.vercel.app/" class="btn">Live Demo</a>
+        <a href="https://github.com/Ibrahimsadiqbasha/Birthday-Reminder" class="btn outline">GitHub</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="card-content">
+            <h3>Expense Calculator</h3><br>
             <p>Track your income and expenses with a user-friendly UI and edit/delete history.</p>
-            <p><strong>Tech:</strong> React.js, Node.js, MongoDB</p>
-        </div></a>
-        <a href="https://github.com/Ibrahimsadiqbasha/portfolio" target="_blank" style="text-decoration: none;">
-        <div class="project-card">
-            <h3>Portfolio Website</h3>
+            <p><strong>Tech:</strong> HTML, CSS, React.js, Node.js, Express.js, MongoDB</p>
+      </div>
+      <div class="card-overlay">
+        <a href="https://expense-tracker-theta-virid.vercel.app/" class="btn">Live Demo</a>
+        <a href="https://github.com/Ibrahimsadiqbasha/Expense-Tracker" class="btn outline">GitHub</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="card-content">
+            <h3>Portfolio Website</h3><br>
             <p>This responsive website (you’re viewing it!) showcasing all my projects and skills.</p>
             <p><strong>Tech:</strong> HTML, CSS, JavaScript</p>
-        </div></a>
-        <a href="https://github.com/Ibrahimsadiqbasha/Rock-paper-scissor" target="_blank" style="text-decoration: none;">
-        <div class="project-card">
-            <h3>Rock, Paper, Scissors Game</h3>
+      </div>
+      <div class="card-overlay">
+        <a href="https://ibrahimsadiqbasha.github.io/portfolio/" class="btn">Live Demo</a>
+        <a href="https://github.com/Ibrahimsadiqbasha/portfolio" class="btn outline">GitHub</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="card-content">
+            <h3>Rock, Paper, Scissors Game</h3><br>
             <p>A simple but interactive browser game with score and animations.</p>
             <p><strong>Tech:</strong> HTML, CSS, JavaScript</p>
-        </div></a>
-</div>
+      </div>
+      <div class="card-overlay">
+        <a href="https://ibrahimsadiqbasha.github.io/Rock-paper-scissor-update/" class="btn">Live Demo</a>
+        <a href="https://github.com/Ibrahimsadiqbasha/Rock-paper-scissor-update" class="btn outline">GitHub</a>
+      </div>
+    </div>
 
+    <div class="project-card">
+      <div class="card-content">
+        <h3>Cloud-Based Gaming Platform</h3><br>
+            <p>Multiplayer browser gaming platform with real-time interaction and score tracking.</p>
+            <p><strong>Tech:</strong> HTML, CSS, JavaScript, Firebase Auth</p>
+      </div>
+      <div class="card-overlay">
+        <a href="#" class="btn">Live Demo</a>
+        <a href="https://github.com/Ibrahimbashasadiq/Gaming-Platform/tree/main/new" class="btn outline">GitHub</a>
+      </div>
+    </div>
+
+  </div>
+</div>
     </div>
     <div id="skill1" class="skill">
         <center><h2>Skills</h2></center>
@@ -125,10 +168,20 @@ Let’s build something amazing together!</p>
             <p class="con1">&copy: 2025 Ibrahim Basha. All rights reserved.</p>
         </div>
         <div class="social">
-            <span class="social1"><a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=DmwnWsmFRhcckrQRbgPxGjbfkswfVBTMBNgkFZvMVmhfkVfqkghgHVszwbBNKktPGHWttlTMVJcb" class="fa fa-envelope" title="Email Me"></a></span>
-            <span class="social1"><a href="https://www.linkedin.com/in/ibrahim-basha-s-67055a277/" class="fa fa-linkedin"></a></span>
-            <span class="social1"><a href="https://github.com/Ibrahimsadiqbasha" class="fa fa-github"></a></span><br>
+            <a href="mailto:ibrahimbasha0927@gmail.com" target="_blank">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/ibrahim-basha-s-67055a277/" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+
+            <a href="https://github.com/Ibrahimsadiqbasha" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
         </div>
+
+        
     </div>
     
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
