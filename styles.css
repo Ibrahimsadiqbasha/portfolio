@@ -21,7 +21,6 @@ body{
 .navbar{
     display: flex;
     width: 60%;
-    justify-content: end;
     gap: 50px;
     justify-content: space-around;
     padding: 20px 30px 0 0;
@@ -50,7 +49,7 @@ body{
     display: flex;
 }
 .home{
-    padding: 180px 0 50px 120px;
+    padding: 180px 120px 50px 120px;
     font-size: 35px;
 }
 
@@ -90,21 +89,22 @@ body{
 .about{
     display: flex;
     margin: 50px 0;
+    padding: 80px 120px 50px 120px;
 }
 .aboutimg{
     width: 350px;
     height:350px;
     border: 5px solid black;
     border-radius: 50px;
-    margin: 150px 0 0 100px;
+    margin: 100px 0 0 100px;
 
 }
 .aboutcont{
     width: 700px;
-    padding: 100px 0 0 150px;
+    padding: 50px 100px 50px 150px;
     font-size:20px ;
 }
-.btn,.homebtn1{
+.btn,.homebtn{
     width: 200px;
     height: 50px;
     border-radius: 20px;
@@ -113,7 +113,7 @@ body{
     background-color:darkcyan;
     text-decoration: none;
 }
-.btn:hover,.homebtn1:hover{
+.btn:hover,.homebtn:hover{
     cursor: pointer;
     color: black;
     box-shadow: 0 0 20px #017977,0 0 40px #0081bc;
@@ -126,20 +126,24 @@ body{
 .section-title {
   text-align: center;
   font-size: 30px;
-  margin-bottom: 40px;
+  margin-bottom: 70px;
   color: white;
 }
 
 .project-grid {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
   padding: 0 80px;
+  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .project-card {
   position: relative;
   height: 200px;
+  width: 350px;
   background: rgba(255,255,255,0.08);
   border-radius: 20px;
   box-shadow: 0 0 15px darkcyan;
@@ -156,22 +160,17 @@ body{
   inset: 0;
   background: rgba(0, 0, 0, 0.85);
   display: flex;
-  justify-content: center;   /* horizontal center */
-  align-items: center;       /* vertical center */
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   gap: 16px;
   opacity: 0;
   transition: opacity 0.3s ease;
 }
 
-/* Stack buttons vertically */
-.card-overlay {
-  flex-direction: column;
-}
-
-/* Buttons alignment fix */
 .card-overlay .btn {
-  min-width: 160px;          /* 👈 makes both buttons same width */
-  text-align: center;        /* centers text inside button */
+  min-width: 160px;
+  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -187,10 +186,10 @@ body{
 }
 
 .skill{
-    padding-top: 80px;
+    padding: 100px  0;
 }
 .skillcon{
-    margin:50px 120px 80px 120px;
+    margin:70px 120px 70px 120px;
     display: flex;
     flex-wrap: wrap;
     background-color: rgba(0,0,0,0.2);
@@ -206,31 +205,44 @@ body{
     box-shadow: 0 0 50px black;
 }
 .ski:hover{
-    box-shadow: 0 0 20px #048381,0 0 40px #0081bc
+    box-shadow: 0 0 20px #048381,0 0 40px #0081bc;
 }
-.con2,.con{
+.con2{
     margin: 30px 30px;
     color: white;
 }
 .con{
+    margin: 30px 30px;
+    color: white;
     font-size: 20px;
 }
-.wholecontact{
-    display: flex;
-    padding: 0 50px 30px 50px;
+.contact-title{
     border-radius: 70px 70px 0 0;
     background: linear-gradient(135deg,rgb(1, 40, 85),rgb(1, 1, 100));
 }
+.ctitle{
+    font-size: 30px;
+    text-align: center;
+    padding: 70px 0 50px 0;
+}
+.wholecontact{
+    display: flex;
+    justify-content: center;
+    padding: 0 50px 30px 50px;
+    border-radius: 70px 70px 0 0;
+    
+}
+
 .contact{
     width: 60%;
-    margin: 30px 0 0 10px;
+    margin: 0 0 0 10px;
 }
 .box{
     width: 30%;
     box-shadow: 0 0 20px #03807d,0 0 40px #0081bc;
     text-align: center;
     padding-top: 20px;
-    margin: 120px 100px 0 100px ;
+    margin: 0 100px ;
     padding: 30px 10px;
     border-radius: 40px;
 }
@@ -276,7 +288,7 @@ body{
     justify-content: center;
 }
 .cencon{
-    width: 60%;
+    width: 55%;
 }
 .con1{
     color: white;
@@ -292,7 +304,280 @@ body{
     padding: 10px 50px 10px 0;
 }
 
+/* Media Queries for Responsive Design */
 
-.social-links a:hover {
-  color: #0077b5; /* LinkedIn blue */
+/* Tablets (768px and below) */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .navbar {
+    width: 100%;
+    gap: 20px;
+    padding: 10px 15px 0 0;
+  }
+
+  .logo {
+    width: 100%;
+    padding: 10px 0 0 15px;
+  }
+
+  .homecon {
+    flex-direction: column;
+    padding-top: 150px;
+  }
+
+  .home {
+    padding: 100px 30px 30px 30px;
+    font-size: 24px;
+  }
+
+  .photo {
+    width: 250px;
+    height: 250px;
+    margin: 50px auto;
+  }
+
+  .about {
+    flex-direction: column;
+    padding: 50px 30px;
+    margin: 30px 0;
+  }
+
+  .aboutimg {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto 30px auto;
+    border-radius: 20px;
+  }
+
+  .aboutcont {
+    width: 100%;
+    padding: 30px 0;
+    font-size: 16px;
+  }
+
+  .project-grid {
+    padding: 0 20px;
+    gap: 20px;
+  }
+
+  .project-card {
+    width: 100%;
+    max-width: 300px;
+    height: 180px;
+  }
+
+  .skillcon {
+    margin: 40px 20px;
+    flex-wrap: wrap;
+  }
+
+  .ski {
+    width: 120px;
+    height: 120px;
+    margin: 15px;
+  }
+
+  .wholecontact {
+    flex-direction: column;
+    padding: 0 20px 20px 20px;
+  }
+
+  .contact {
+    width: 100%;
+    margin: 0;
+  }
+
+  .box {
+    width: 100%;
+    margin: 20px 0;
+    padding: 20px 10px;
+  }
+
+  .box1, .box2 {
+    width: 100%;
+  }
+
+  .sm {
+    width: 100%;
+    gap: 20px;
+    padding: 10px;
+  }
+
+  .co {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+  }
+
+  .cencon {
+    width: 100%;
+  }
+
+  .con1 {
+    padding: 15px 0 0 0;
+    text-align: center;
+  }
+
+  .social {
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  .social a {
+    margin: 30px 15px 0 0;
+  }
+}
+
+/* Mobile Phones (480px and below) */
+@media (max-width: 480px) {
+  .container {
+    position: relative;
+    width: 100%;
+  }
+
+  .navbar {
+    width: 100%;
+    gap: 10px;
+    padding: 5px 10px 0 0;
+    flex-wrap: wrap;
+  }
+
+  .bli {
+    font-size: 14px;
+  }
+
+  .logo1 {
+    width: 35px;
+    height: 35px;
+  }
+
+  .homecon {
+    flex-direction: column;
+    padding-top: 120px;
+  }
+
+  .home {
+    padding: 80px 15px 20px 15px;
+    font-size: 18px;
+  }
+
+  .homebtn {
+    width: 150px;
+    height: 40px;
+    font-size: 16px;
+  }
+
+  .photo {
+    width: 180px;
+    height: 180px;
+    margin: 30px auto;
+    border: 3px solid black;
+  }
+
+  .about {
+    padding: 30px 15px;
+  }
+
+  .aboutimg {
+    width: 180px;
+    height: 180px;
+    border-radius: 15px;
+  }
+
+  .aboutcont {
+    padding: 20px 0;
+    font-size: 14px;
+  }
+
+  .section-title {
+    font-size: 22px;
+    margin-bottom: 30px;
+  }
+
+  .project-grid {
+    padding: 0 10px;
+    gap: 15px;
+  }
+
+  .project-card {
+    width: 100%;
+    max-width: 100%;
+    height: 150px;
+  }
+
+  .card-content {
+    padding: 15px;
+  }
+
+  .card-overlay .btn {
+    min-width: 120px;
+    font-size: 14px;
+    height: 40px;
+  }
+
+  .skill {
+    padding: 50px 0;
+  }
+
+  .skillcon {
+    margin: 30px 10px;
+  }
+
+  .ski {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+  }
+
+  .box {
+    width: 100%;
+    margin: 15px 0;
+    padding: 15px 10px;
+  }
+
+  .box1, .box2 {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .box3 {
+    width: 80px;
+    height: 35px;
+    font-size: 16px;
+  }
+
+  .btn, .homebtn1 {
+    width: 160px;
+    height: 40px;
+    font-size: 16px;
+  }
+
+  .sm {
+    width: 100%;
+    font-size: 24px;
+    gap: 15px;
+    padding: 10px;
+  }
+
+  .co {
+    font-size: 14px;
+  }
+
+  .social a {
+    font-size: 24px;
+    margin: 20px 10px 0 0;
+  }
+
+  .footer {
+    flex-direction: column;
+  }
+
+  .logo2 {
+    width: 100%;
+    padding: 10px 0 0 0;
+    text-align: center;
+  }
 }
